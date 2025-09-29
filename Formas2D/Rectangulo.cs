@@ -10,7 +10,8 @@ namespace Formas2D
     {
         public Rectangulo(float baseSuelo, float altura): base(baseSuelo, altura, 4)
         {
-
+            CalcularArea();
+            CalcularPerimetro();
         }
 
         public void CalcularArea()

@@ -10,7 +10,8 @@ namespace Formas2D
     {
         public Rombo(float diagonalVertical, float diagonalHorizontal):base(diagonalVertical, diagonalHorizontal, 4)
         {
-
+            CalcularArea();
+            CalcularPerimetro();
         }
         public void CalcularArea()
         {

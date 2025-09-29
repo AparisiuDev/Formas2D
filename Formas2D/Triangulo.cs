@@ -10,7 +10,8 @@ namespace Formas2D
     {
         public Triangulo(float baseSuelo, float altura):base(baseSuelo, altura, 3)
         {
-
+            CalcularArea();
+            CalcularPerimetro();
         }
 
         public void CalcularArea()
