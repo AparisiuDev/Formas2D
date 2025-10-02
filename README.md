@@ -1,1 +1,1 @@
-A small project to practice C# inheritance, using the different geometric shapes as a reference. Coding lasted for ~30 minutes
+A small project to practice C# inheritance, using the different geometric shapes as a reference.
