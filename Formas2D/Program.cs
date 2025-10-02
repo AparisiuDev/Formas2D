@@ -14,13 +14,24 @@ namespace Formas2D
             bool exit = false;
             while (!exit)
             {
+                Console.Clear();
                 Console.WriteLine("1.Añadir forma\n" +
                     "2.Ver area total\n" +
                     "3.Salir\n");
-                int n = int.Parse(Console.ReadLine());
+                int n = 0;
+                try
+                {
+                    n = int.Parse(Console.ReadLine());
+                }
+                catch (FormatException)
+                {
+                    Console.WriteLine("Error: No ingresaste un num correcto.");
+                    Console.ReadKey();
+                }
                 switch (n)
                 {
                     case 1:
+                        Console.Clear();
                         diagrama.AddFormes();
                         break;
                     case 2:
@@ -31,8 +42,6 @@ namespace Formas2D
                         exit = true;
                         break;
                     default:
-                        Console.WriteLine("Input no reconocido");
-                        Console.ReadKey();
                         break;
                 }
             }

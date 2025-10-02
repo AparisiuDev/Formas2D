@@ -43,6 +43,8 @@ namespace Formas2D
             catch (FormatException)
             {
                 Console.WriteLine("Error: No ingresaste un num correcto.");
+                Console.ReadKey();
+                AddFormes();
             }
 
             
@@ -73,7 +75,6 @@ namespace Formas2D
                     FormasConjunto.Add(new Elipse(int.Parse(Console.ReadLine()), int.Parse(Console.ReadLine())));
                     break;
                 default:
-                    Console.WriteLine("Input no reconocido");
                     break;
 
             }
