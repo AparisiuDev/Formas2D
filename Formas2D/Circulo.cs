@@ -13,9 +13,9 @@ namespace Formas2D
 
         }
 
-        public void CalcularPerimetro()
+        public float CalcularPerimetroCirculo()
         {
-            Perimetro = (float)(2 * Math.PI * Radio1);
+            return (float)(2 * Math.PI * Radio1);
         }
     }
 }

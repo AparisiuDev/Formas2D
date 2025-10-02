@@ -23,19 +23,18 @@ namespace Formas2D
         }
         public Elipse(float radius1, float radius2)
         {
+            Area += CalcularArea();
             Radio1 = radius1;
             Radio2 = radius2;
-            CalcularArea();
-            CalcularPerimetroElipse();
         }
 
-        public void CalcularArea()
+        public float CalcularArea()
         {
-            Area = (float)(Math.PI * Radio1 * Radio2);
+            return (float)(Math.PI * Radio1 * Radio2);
         }
-        public void CalcularPerimetroElipse()
+        public float CalcularPerimetroElipse()
         {
-            Perimetro = (float)(Math.PI*(3*(Radio1 + Radio2)-Math.Sqrt((3*Radio1*Radio2)*(Radio1 + 3*Radio2))));
+            return (float)(Math.PI*(3*(Radio1 + Radio2)-Math.Sqrt((3*Radio1*Radio2)*(Radio1 + 3*Radio2))));
         }
     }
 }

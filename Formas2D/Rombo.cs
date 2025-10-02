@@ -10,16 +10,16 @@ namespace Formas2D
     {
         public Rombo(float diagonalVertical, float diagonalHorizontal):base(diagonalVertical, diagonalHorizontal, 4)
         {
-            CalcularArea();
+            Area += CalcularArea();
             CalcularPerimetro();
         }
-        public void CalcularArea()
+        public float CalcularArea()
         {
-            Area = (BaseSuelo * Altura) / 2;
+            return (BaseSuelo * Altura) / 2;
         }
-        public void CalcularPerimetro()
+        public float CalcularPerimetro()
         {
-            Perimetro = (float)(2 * (Math.Sqrt(Math.Pow(BaseSuelo, 2) + Math.Pow(Altura, 2))));
+            return (float)(2 * (Math.Sqrt(Math.Pow(BaseSuelo, 2) + Math.Pow(Altura, 2))));
         }
     }
 }

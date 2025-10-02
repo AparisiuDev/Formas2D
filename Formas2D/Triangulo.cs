@@ -10,18 +10,18 @@ namespace Formas2D
     {
         public Triangulo(float baseSuelo, float altura):base(baseSuelo, altura, 3)
         {
-            CalcularArea();
+            Area += CalcularArea();
             CalcularPerimetro();
         }
 
-        public void CalcularArea()
+        public float CalcularArea()
         {
-            Area = (BaseSuelo * Altura) / 2;
+            return (BaseSuelo * Altura) / 2;
         }
-        public void CalcularPerimetro()
+        public float CalcularPerimetro()
         {
             float lado = (float)Math.Sqrt(Math.Pow(BaseSuelo / 2, 2) + Math.Pow(Altura, 2));
-            Perimetro = BaseSuelo + 2 * lado;
+            return BaseSuelo + 2 * lado;
         }
     }
 }

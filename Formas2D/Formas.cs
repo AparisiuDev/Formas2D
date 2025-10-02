@@ -24,7 +24,8 @@ namespace Formas2D
 
         public Formas()
         {
-           
+            Area = 0;
+            Perimetro = 0;
         }
     }
 }
